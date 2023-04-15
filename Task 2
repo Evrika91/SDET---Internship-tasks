@@ -1,0 +1,58 @@
+Create test-cases for successful and unsuccessful login, and any additional test-cases you might think it would be good to add.
+PRECONDITION - user with login "Hanna1" and password "pwd" must exist in the system
+
+1. Happy path - correct login and password: 
+  Input:
+  Username: "Hanna1"
+  Password: "pwd"
+  Expected Output: Login successful
+2. Unsuccessful Login - Incorrect Username:
+  Input:
+  Username: "Sunny22"
+  Password: "pwd"
+  Expected Output: Invalid username or password
+3. Unsuccessful Login - Incorrect Password:
+  Input:
+  Username: "Hanna1"
+  Password: "123456"
+  Expected Output: Invalid username or password
+4. Unsuccessful Login - Empty Username:
+  Input:
+  Username: ""
+  Password: "pwd"
+  Expected Output: Please enter a valid username
+5. Unsuccessful Login - Empty Password:
+  Input:
+  Username: "Hanna1"
+  Password: ""
+  Expected Output: Please enter a valid password
+6. Unsuccessful Login - Empty Username and Password:
+  Input:
+  Username: ""
+  Password: ""
+  Expected Output: Please enter a valid username and password
+7. Unsuccessful Login - Invalid Username Format:
+  Input:
+  Username: "Hanna@1"
+  Password: "pwd"
+  Expected Output: Invalid username format. Please use alphanumeric characters only.
+8. Unsuccessful Login - Invalid Password Format:
+  Input:
+  Username: "user1"
+  Password: "pass"
+  Expected Output: Invalid password format. Please enter a password with at least 6 characters.
+9. Unsuccessful Login - Account Locked:
+  Input:
+  Username: "Hanna1_locked"
+  Password: "pwd"
+  Expected Output: Account locked. Please contact support for assistance.
+10. Unsuccessful Login - Account Inactive:
+  Input:
+  Username: "user_inactive"
+  Password: "pwd"
+  Expected Output: Account inactive. Please contact support to reactivate your account.
+11. Unsuccessful Login - CAPS LOCK Enabled:
+  Input:
+  Username: "Hanna1"
+  Password: "PWD"
+  Expected Output: Caps Lock is enabled. Please check your keyboard settings.
