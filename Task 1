@@ -1,0 +1,27 @@
+Function description:
+Find the length of the longest substring without repeating characters in the given string `s`.
+
+Input/output options
+1. Input with no repeating characters: A test case where the input string s has no repeating characters. For example:
+Input: "abcdefg"
+Output: 7
+
+2. Input with all repeating characters: A test case where all characters in the input string s are the same. This will test if the function can handle cases where there are no substrings without repeating characters. For example:
+Input: "aaaaaa"
+Output: 1
+
+3. Input with some repeating characters: A test case where the input string has some repeating characters, but also contains substrings without repeating characters. This will test if the function can correctly identify the longest substring without repeating characters. For example:
+Input: "abcabcbb"
+Output: 3
+
+4. Input with special characters and numbers: A test case where the input string contains special characters and numbers, in addition to alphabetic characters. This will test if the function can handle different types of characters in the input string. For example:
+Input: "a1b#cde"
+Output: 5
+
+5. Input with spaces and punctuation: A test case where the input string contains spaces and punctuation characters, in addition to alphabetic characters. This will test if the function can correctly handle spaces and punctuation characters in the input string. For example:
+Input: "hello world!"
+Output: 5
+
+6. Input with an empty string: A test case where the input string s is empty. This will test if the function can handle an empty input string and provide the appropriate output. For example:
+Input: ""
+Output: 0
